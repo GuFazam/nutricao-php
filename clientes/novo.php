@@ -4,7 +4,7 @@ include "../includes/menu.php";
 ?>
 <h1>Novo cliente</h1>
 <p>Vamos cadastrar um cliente novo no sistema</p>
-<form action="inserir.php" method="post">
+<form action="inserir.php" method="post" class="col-12">
 <br>
 nome: <input type="text" name="nome" required maxlength="100">
 <br>

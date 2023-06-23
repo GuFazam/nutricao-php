@@ -6,7 +6,7 @@ include "../includes/conexao.php";
     <a href="novo.php">Adicionar cliente</a>
 </p>
 <h2>Lista de clientes</h2>
-<table border="1">
+<table class="table table-striped-columns">
     <tr>
         <td>Código</td>
         <td>Nome</td>

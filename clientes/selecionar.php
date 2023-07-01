@@ -2,12 +2,12 @@
 include "../includes/cabecalho.php";
 include "../includes/conexao.php";
 ?>
-<p>
+<p class="d-flex justify-content-center">
     <a href="novo.php">Adicionar cliente</a>
 </p>
 <h2>Lista de clientes</h2>
 <table class="table table-striped-columns">
-    <tr>
+    <tr class="table-dark">
         <td>Código</td>
         <td>Nome</td>
         <td>Cidade</td>
@@ -33,9 +33,9 @@ include "../includes/conexao.php";
             <td><?php echo $um_cliente['data_nascimento'];?></td>
             <td><?php echo $um_cliente['data_ultima_consulta'];?></td>
             <td>
-                <a href="visualizar.php?codigo=<?php echo $um_cliente['codigo'];?>" title="Ver completo">visualizar</a>
-                <a href="editar.php?codigo=<?php echo $um_cliente['codigo'];?>">editar</a>
-                <a href="deletar.php?codigo=<?php echo $um_cliente['codigo'];?>">excluir</a>
+                <a href="visualizar.php?codigo=<?php echo $um_cliente['codigo'];?>" title="Ver completo"><img src="../img/eye_icon.png" width="25"></a>
+                <a href="editar.php?codigo=<?php echo $um_cliente['codigo'];?>"><img src="../img/edit_icon.png" width="25"></a>
+                <a href="deletar.php?codigo=<?php echo $um_cliente['codigo'];?>"><img src="../img/trash_icon.png" width="25"></a>
             </td>
         </tr>
         <?php

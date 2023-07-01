@@ -24,13 +24,16 @@ while($um_cliente = mysqli_fetch_assoc($todos_os_clientes)):
 endwhile;
 ?>
 <h1>Ficha do cliente</h1> 
-nome: <?php echo $nome;?><br>
-cidade: <?php echo $cidade . " - " . $estado;?><br>
-peso: <?php echo $peso;?><br>
-altura: <?php echo $altura;?><br>
-data de nascimento: <?php echo $data_nascimento;?><br>
-data da ultima consulta: <?php echo $data_ultima_consulta;?><br>
-
+<table class="table table-striped">
+  <tr>
+    <td>nome: <?php echo $nome;?></td>
+    <td>cidade: <?php echo $cidade . " - " . $estado;?></td>
+    <td>peso: <?php echo $peso;?></td>
+    <td>altura: <?php echo $altura;?></td>
+    <td>data de nascimento: <?php echo $data_nascimento;?></td>
+    <td>data da ultima consulta: <?php echo $data_ultima_consulta;?></td>
+  </tr>
+</table>
 <?php 
 mysqli_close($conexao);
 include "../includes/rodape.php";

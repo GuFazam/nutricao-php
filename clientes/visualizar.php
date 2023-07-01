@@ -25,17 +25,26 @@ endwhile;
 ?>
 <h1>Ficha do cliente</h1> 
 <table class="table table-striped">
-  <tr>
-    <td>nome: <?php echo $nome;?></td>
-    <td>cidade: <?php echo $cidade . " - " . $estado;?></td>
-    <td>peso: <?php echo $peso;?></td>
-    <td>altura: <?php echo $altura;?></td>
-    <td>data de nascimento: <?php echo date('d/m/Y', strtotime($data_nascimento));?></td>
-    <td>data da ultima consulta: <?php echo date('d/m/Y', strtotime($data_ultima_consulta));?></td>
+  <tr class="table-dark">
+  <td>Código</td>
+        <td>Nome</td>
+        <td>Cidade</td>
+        <td>Estado</td>
+        <td>Peso</td>
+        <td>Altura</td>
+        <td>Data de Nascimento</td>
+        <td>Data da Ultima Consulta</td>
+        <td>Ações</td>
   </tr>
   <tr>
-    
+    <td><?php echo $nome;?></td>
+    <td><?php echo $cidade . " - " . $estado;?></td>
+    <td><?php echo $peso;?></td>
+    <td><?php echo $altura;?></td>
+    <td><?php echo date('d/m/Y', strtotime($data_nascimento));?></td>
+    <td><?php echo date('d/m/Y', strtotime($data_ultima_consulta));?></td>
   </tr>
+  
 </table>
 <?php 
 mysqli_close($conexao);

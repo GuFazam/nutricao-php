@@ -30,8 +30,8 @@ include "../includes/conexao.php";
             <td><?php echo $um_cliente['estado'];?></td>
             <td><?php echo $um_cliente['peso'];?></td>
             <td><?php echo $um_cliente['altura'];?></td>
-            <td><?php echo $um_cliente['data_nascimento'];?></td>
-            <td><?php echo $um_cliente['data_ultima_consulta'];?></td>
+            <td><?php echo date('d/m/Y', strtotime($um_cliente['data_nascimento']));?></td>
+            <td><?php echo date('d/m/Y', strtotime($um_cliente['data_ultima_consulta']));?></td>
             <td>
                 <a href="visualizar.php?codigo=<?php echo $um_cliente['codigo'];?>" title="Ver completo"><img src="../img/eye_icon.png" width="25"></a>
                 <a href="editar.php?codigo=<?php echo $um_cliente['codigo'];?>"><img src="../img/edit_icon.png" width="25"></a>

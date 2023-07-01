@@ -30,8 +30,11 @@ endwhile;
     <td>cidade: <?php echo $cidade . " - " . $estado;?></td>
     <td>peso: <?php echo $peso;?></td>
     <td>altura: <?php echo $altura;?></td>
-    <td>data de nascimento: <?php echo $data_nascimento;?></td>
-    <td>data da ultima consulta: <?php echo $data_ultima_consulta;?></td>
+    <td>data de nascimento: <?php echo date('d/m/Y', strtotime($data_nascimento));?></td>
+    <td>data da ultima consulta: <?php echo date('d/m/Y', strtotime($data_ultima_consulta));?></td>
+  </tr>
+  <tr>
+    
   </tr>
 </table>
 <?php 

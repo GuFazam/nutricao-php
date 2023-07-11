@@ -34,11 +34,12 @@ endwhile;
         <td>Altura</td>
         <td>Data de Nascimento</td>
         <td>Data da Ultima Consulta</td>
-        <td>Ações</td>
   </tr>
   <tr>
+    <td><?php echo $codigo?></td>
     <td><?php echo $nome;?></td>
-    <td><?php echo $cidade . " - " . $estado;?></td>
+    <td><?php echo $cidade;?></td>
+    <td><?php echo $estado;?></td>
     <td><?php echo $peso;?></td>
     <td><?php echo $altura;?></td>
     <td><?php echo date('d/m/Y', strtotime($data_nascimento));?></td>
